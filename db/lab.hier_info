@@ -1,0 +1,191 @@
+|lab
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst2.ACLR
+RESET => inst3.ACLR
+RESET => inst.ACLR
+RESET => inst1.ACLR
+RESET => inst25.ACLR
+RESET => inst26.ACLR
+RESET => inst55.ACLR
+RESET => inst12.ACLR
+CLK => moduleName:inst4.clk
+CLK => moduleName:inst44.clk
+CLK => one_cycle_delay:inst47.clk
+clkreset => moduleName:inst4.rst
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 <= seven_segment_decoder:inst24.a
+pin_name2 <= seven_segment_decoder:inst24.b
+pin_name3 <= seven_segment_decoder:inst24.c
+pin_name4 <= seven_segment_decoder:inst24.d
+pin_name5 <= seven_segment_decoder:inst24.e
+pin_name6 <= seven_segment_decoder:inst24.f
+pin_name7 <= seven_segment_decoder:inst24.g
+Q4 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+pin_name15 => one_cycle_delay:inst47.rst
+Q5 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q6 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+Q7 <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+pin_name8 <= seven_segment_decoder:inst46.a
+pin_name9 <= seven_segment_decoder:inst46.b
+pin_name10 <= seven_segment_decoder:inst46.c
+pin_name11 <= seven_segment_decoder:inst46.d
+pin_name12 <= seven_segment_decoder:inst46.e
+pin_name13 <= seven_segment_decoder:inst46.f
+pin_name14 <= seven_segment_decoder:inst46.g
+
+
+|lab|moduleName:inst4
+clk => clk_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+rst => clk_out~reg0.ACLR
+rst => counter[0].ACLR
+rst => counter[1].ACLR
+rst => counter[2].ACLR
+rst => counter[3].ACLR
+rst => counter[4].ACLR
+rst => counter[5].ACLR
+rst => counter[6].ACLR
+rst => counter[7].ACLR
+rst => counter[8].ACLR
+rst => counter[9].ACLR
+rst => counter[10].ACLR
+rst => counter[11].ACLR
+rst => counter[12].ACLR
+rst => counter[13].ACLR
+rst => counter[14].ACLR
+rst => counter[15].ACLR
+rst => counter[16].ACLR
+rst => counter[17].ACLR
+rst => counter[18].ACLR
+rst => counter[19].ACLR
+rst => counter[20].ACLR
+rst => counter[21].ACLR
+rst => counter[22].ACLR
+rst => counter[23].ACLR
+rst => counter[24].ACLR
+rst => counter[25].ACLR
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab|seven_segment_decoder:inst24
+in0 => Decoder0.IN3
+in1 => Decoder0.IN2
+in2 => Decoder0.IN1
+in3 => Decoder0.IN0
+a <= out.DB_MAX_OUTPUT_PORT_TYPE
+b <= out.DB_MAX_OUTPUT_PORT_TYPE
+c <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab|moduleName:inst44
+clk => clk_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+rst => clk_out~reg0.ACLR
+rst => counter[0].ACLR
+rst => counter[1].ACLR
+rst => counter[2].ACLR
+rst => counter[3].ACLR
+rst => counter[4].ACLR
+rst => counter[5].ACLR
+rst => counter[6].ACLR
+rst => counter[7].ACLR
+rst => counter[8].ACLR
+rst => counter[9].ACLR
+rst => counter[10].ACLR
+rst => counter[11].ACLR
+rst => counter[12].ACLR
+rst => counter[13].ACLR
+rst => counter[14].ACLR
+rst => counter[15].ACLR
+rst => counter[16].ACLR
+rst => counter[17].ACLR
+rst => counter[18].ACLR
+rst => counter[19].ACLR
+rst => counter[20].ACLR
+rst => counter[21].ACLR
+rst => counter[22].ACLR
+rst => counter[23].ACLR
+rst => counter[24].ACLR
+rst => counter[25].ACLR
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab|one_cycle_delay:inst47
+clk => out~reg0.CLK
+clk => in_reg.CLK
+rst => in_reg.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+in => in_reg.DATAA
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab|seven_segment_decoder:inst46
+in0 => Decoder0.IN3
+in1 => Decoder0.IN2
+in2 => Decoder0.IN1
+in3 => Decoder0.IN0
+a <= out.DB_MAX_OUTPUT_PORT_TYPE
+b <= out.DB_MAX_OUTPUT_PORT_TYPE
+c <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+
